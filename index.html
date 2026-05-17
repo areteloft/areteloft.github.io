@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Arcana: Tarot</title>
+  <meta name="description" content="Cafe Arcana: Tarot is a small indie tarot app project by Areteloft." />
+
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #fffdf9;
+      --text: #2e2a26;
+      --muted: #6f675f;
+      --line: #e6dfd5;
+      --accent: #7a5f47;
+      --accent-dark: #5f4734;
+      --max: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .page {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 44px 30px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .sub {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    p {
+      margin: 0 0 16px;
+      font-size: 17px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 30px 0 8px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fffdf9;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    .button.secondary:hover {
+      background: #f2ede5;
+      text-decoration: none;
+    }
+
+    .section {
+      margin-top: 38px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+
+    .links {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .link-card {
+      display: block;
+      border: 1px solid var(--line);
+      background: #fcfaf6;
+      padding: 16px;
+    }
+
+    .link-card:hover {
+      background: #f7f1e9;
+      text-decoration: none;
+    }
+
+    .link-card strong {
+      display: block;
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+
+    .link-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 20px));
+        padding: 28px 0 40px;
+      }
+
+      .page {
+        padding: 30px 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .actions {
+        display: grid;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <article class="page">
+      <p class="eyebrow">Areteloft</p>
+      <h1>Cafe Arcana: Tarot</h1>
+      <p class="sub">A small indie tarot app project.</p>
+
+      <p>
+        Cafe Arcana: Tarot is an indie tarot app created to keep the quiet atmosphere of drawing cards while translating a personal reading experience into a digital format.
+      </p>
+
+      <p>
+        The project focuses on a more reflective tarot experience: asking your own question, drawing cards yourself, and receiving a reading inside a calm, immersive world.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.areteloft.cafearcana" target="_blank" rel="noreferrer">
+          Open on Google Play
+        </a>
+        <a class="button secondary" href="about-the-project.html">
+          About the Project
+        </a>
+      </div>
+
+      <section class="section">
+        <h2>Project information</h2>
+        <p>
+          This website provides basic public information for the app, including the project introduction and privacy policy.
+        </p>
+
+        <div class="links">
+          <a class="link-card" href="about-the-project.html">
+            <strong>About the Project</strong>
+            <span>Read more about the idea and direction behind Cafe Arcana: Tarot.</span>
+          </a>
+
+          <a class="link-card" href="privacy.html">
+            <strong>Privacy Policy / 개인정보처리방침</strong>
+            <span>View information about privacy, data processing, advertising, and contact details.</span>
+          </a>
+
+          <a class="link-card" href="https://play.google.com/store/apps/details?id=com.areteloft.cafearcana" target="_blank" rel="noreferrer">
+            <strong>Google Play Store</strong>
+            <span>Visit the Android app listing.</span>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        © 2026 Areteloft. Cafe Arcana: Tarot.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
